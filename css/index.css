@@ -73,6 +73,50 @@ section, footer{
     margin: 0 auto;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* Nav & Header Styles*/
+
+header {
+    height: 45vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .headernav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    padding: 2%;
+    background-color: white;
+  }
+  .logo {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img {
+    max-width: 60%;
+  }
+  .links {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+  }
+
+  .links a{
+      color:black;
+  }
+
+
+
 /*Top Section Styles*/
 
 .top-content {
@@ -90,9 +134,15 @@ section, footer{
     padding-bottom: 4%;  
 }
 
+.text-container h2{
+    text-align: center;
+}
+
+
 /*Middle Section Styles*/
 .middle-content {
     margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
 }
 
 .middle-content h2 {
@@ -105,14 +155,108 @@ section, footer{
     justify-content: space-between;
 }
 
-.middle-content .boxes .box {
-    background: black;
+.middle-content .boxes .box1 {
+    background: teal;
     margin: 4% 0;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 5%;
+    margin: 2%;
 }
+.middle-content .boxes .box2 {
+    background: gold;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box3 {
+    background: cadetblue;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box4 {
+    background: coral;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box5 {
+    background: crimson;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box6 {
+    background: forestgreen;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box7 {
+    background: darkorchid;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box8 {
+    background: hotpink;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box9 {
+    background: indigo;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+.middle-content .boxes .box10 {
+    background: dodgerblue;
+    margin: 4% 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    margin: 2%;
+}
+
+
 
 /*Bottom Section Styles*/
 .bottom-content {
@@ -134,7 +278,88 @@ footer {
     background-color: #ff4b00;
 }
 
-/*About Page Styles*/
+footer nav{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
+footer a{
+    color:white;
+}
+
+
+
+
+/*About Page Styles*/
+.top-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    text-align: justify;
+}
+
+.middle-section{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.middle-section div{
+    margin-bottom: 4%;
+    border-bottom: 2px solid #ff4b00;
+    text-align: justify;
+    width: 40%;
+    padding: 5% 0;
+    margin: 2em;
+    
+}
+
+.middle-section img{
+    max-width: 100%;
+}
+
+.bottom-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4%;
+    text-align: justify;
+}
 
 /*Responsive Styles*/
+@media(max-width: 500px){
+    nav{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img{
+        width: 100%;
+    }
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+        margin: 0
+    }
+
+    .bottom-content{
+        flex-direction:column;
+        align-items: center;
+        padding: 0
+    }
+
+    .middle-section div{
+
+    }
+
+    footer nav{
+        display:flex;
+        flex-direction: column;
+    }
+}
